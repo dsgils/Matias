@@ -39,6 +39,10 @@
                                 font-family:Arial, Helvetica, sans-serif ;
                                     font-weight: bold;
         }
+
+
+
+/*----------------------------------------Menu Nav Style---------------------------------------------------------*/
         nav{
             margin: auto;
             width: 800px;
@@ -65,6 +69,42 @@
         nav ul li:hover{
             transform: scale(1.1);
         }
+
+
+        aside{
+            width:800px;
+            height: 500px;
+            margin: auto;
+            background-image: url(img/imagens/img2.jpg);
+            background-size: cover;
+            display: flex;
+        }
+
+        .homerText, .homerImg{
+            width: 50%;
+            height: 500px;
+            
+        }
+         .homerImg{
+            
+            
+        }
+
+        .homerText{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .homerImg1{
+            
+           width: 200px;
+           border-radius: 50%;
+           border: solid 4px white;
+           margin-bottom:20px ;
+        }
+
+/*_____________________________________________________________________________________*/
     </style>
 </head>
 <body>
@@ -73,8 +113,10 @@
         <img src="img/logo/Logo.jpg" class="logo"/>
         <div class="title">  <p>Barbearia Matias</p>  </div>
     </div>
-<!-------------------------------------------------------------------------------------------> 
+<!--_________________________________________________________________________________________--> 
 
+
+<!----------------------------Menu nav--------------------------------->
     <nav>
         <ul>
             <li>Homer</li>
@@ -83,6 +125,14 @@
             <li>Contato</li>
         </ul>
     </nav>
+<!--_________________________________________________________________-->
     
+<aside>
+    <div class="homerText" ><img class="homerImg1" src="img/imagens/img1.jpg"/> barbearia Matias foi fundada 1999</div>
+    <div class="homerImg" ></div>
+
+
+
+</aside>
 </body>
 </html>
