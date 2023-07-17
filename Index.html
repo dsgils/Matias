@@ -46,7 +46,7 @@
         nav{
             margin: auto;
             width: 800px;
-            background-color: brown;
+            background-color: rgb(255, 255, 255);
         }
 
         nav ul{
@@ -64,16 +64,18 @@
             text-align: center;
             color: rgb(251, 255, 0);
             border-radius: 4px;
-            margin: 10px 0px 10px 0px;
+            margin: 5px 0px 5px 0px;
         }
         nav ul li:hover{
             transform: scale(1.1);
         }
+/*______________________________________________________________________________________*/
 
 
+/*-----------------------------------------Quem somos style-----------------------------------*/
         aside{
             width:800px;
-            height: 500px;
+            height: 600px;
             margin: auto;
             background-image: url(img/imagens/img2.jpg);
             background-size: cover;
@@ -85,16 +87,20 @@
             height: 500px;
             
         }
-         .homerImg{
-            
-            
-        }
+       
 
         .homerText{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: 40px;
+            color: white;
+            text-align: justify
+        }
+        .homerText p{
+           font-size: 30px;
+           margin-bottom: 20px;
         }
         .homerImg1{
             
@@ -103,8 +109,53 @@
            border: solid 4px white;
            margin-bottom:20px ;
         }
-
+        
 /*_____________________________________________________________________________________*/
+
+
+
+/*-------------------------------tabela-------------------------------------*/
+        .tab{
+            margin:auto;
+            width: 800px;
+            background-color: blue;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(img/imagens/img3.jpg);
+        }
+
+        th, td{
+            border: solid 1px #AAA;
+            text-align:center;
+            color: white;
+            text-shadow: 0px 2px 2px black;
+        }
+        table{
+            width: 350px;
+        }
+
+        .servicos h1{
+            text-align: center;
+            color: white;
+        }
+        .servicos{width: 50%;
+        height: 400px;}
+
+        .btnAgenda{
+            background: linear-gradient(45deg, #008800, #b3d106);
+            color: black;
+            text-shadow: 0px 2px 2px transparent;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .btnAgenda:hover{
+            cursor: pointer;
+            background: linear-gradient(45deg, #00ff00, #b3d106);
+        }
+/*______________________________________________________________________________*/
+    
     </style>
 </head>
 <body>
@@ -120,19 +171,79 @@
     <nav>
         <ul>
             <li>Homer</li>
-            <li>default</li>
+            <li>Serviços</li>
             <li>Agendamentos</li>
             <li>Contato</li>
         </ul>
     </nav>
 <!--_________________________________________________________________-->
-    
+
+
+<!----------------------------------Quem Somos-------------------------------------->
 <aside>
-    <div class="homerText" ><img class="homerImg1" src="img/imagens/img1.jpg"/> barbearia Matias foi fundada 1999</div>
+    <div class="homerText" ><p>Quem Somos</p><img class="homerImg1" src="img/imagens/img1.jpg"/> A Barbearia Matias é uma rede que foi fundada em 1999 como setor de prestação de serviço, no ramo de beleza para o público masculino, com gestores sempre atentos às novidades do mercado, e com profissionais capacitados. Não deixam passar as velhas práticas, como a de botar uma toalha quente na barba ou de não poupar simpatia no atendimento. Mas além disso, estão sempre atentos às oportunidades de melhorias e às tendências do momento.</div>
     <div class="homerImg" ></div>
-
-
-
 </aside>
+<!--______________________________________________________________________________-->
+
+<!--reclamação e fale conosco-->
+
+<div class="tab">
+
+    <div class="servicos">
+        <h1>Agendamento, Serviços e Preços</h1>
+    </div>
+    <table>
+        <tr>
+            <th>Serviços</th>
+            <th>Dinheiro/pix</th>
+            <th>Cartão</th>
+            <th>Agendamento</th>
+        </tr>
+
+        <tr>
+            <td>Corte Máq 1</td>
+            <td>R$15,00</td>
+            <td>R$17,00</td>
+            <td class="btnAgenda">Agendar este serviço</td>
+        </tr>
+
+        <tr>
+            <td>Corte</td>
+            <td>R$20,00</td>
+            <td>R$22,00</td>
+            <td class="btnAgenda">Agendar este serviço</td>
+        </tr>
+
+        <tr>
+            <td>Barba</td>
+            <td>R$15,00</td>
+            <td>R$17,00</td>
+            <td class="btnAgenda">Agendar este serviço</td>
+        </tr>
+
+        <tr>
+            <td>Pigmento</td>
+            <td>R$10,00</td>
+            <td>R$12,00</td>
+            <td class="btnAgenda">Agendar este serviço</td>
+        </tr>
+
+        <tr>
+            <td>Acabamento</td>
+            <td>R$5,00</td>
+            <td>R$6,00</td>
+            <td class="btnAgenda">Agendar este serviço</td>
+        </tr>
+
+        <tr>
+            <td>Sobrancelha</td>
+            <td>R$5,00</td>
+            <td>R$6,00</td>
+            <td class="btnAgenda">Agendar este serviço</td>
+        </tr>
+    </table>
+
+</div>
 </body>
 </html>
