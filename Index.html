@@ -114,7 +114,7 @@
 
 
 
-/*-------------------------------tabela-------------------------------------*/
+/*-------------------------------tabela de preços-------------------------------------*/
         .tab{
             margin:auto;
             width: 800px;
@@ -157,6 +157,42 @@
             background: linear-gradient(45deg, #00ff00, #b3d106);
         }
 /*______________________________________________________________________________*/
+
+.agendamento{
+    width: 800px;
+    margin: auto;
+    background-color: #008800;
+    
+    display: flex;
+}
+.areaForm{
+    width: 50%;
+    height: 500px;
+    background-color: #b3d106;
+}
+.areaForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.areaForm form input{
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.btnSubmit:hover{
+    cursor: pointer;
+    background-color: #0310c4;
+    font-weight: bolder;
+    color: white;
+    
+}
+.areaForm form p{
+    font-size: 25px;
+}
     
     </style>
 </head>
@@ -188,12 +224,14 @@
 </aside>
 <!--______________________________________________________________________________-->
 
-<!--reclamação e fale conosco-->
+<!--reclamação e fale conosco, trabalhe conosco novo botao evento dia gratis-->
 
+
+<!--------------------------------Tabela de preços------------------------------------->
 <div class="tab">
 
     <div class="servicos">
-        <h1>Agendamento, Serviços e Preços</h1>
+        <h1>Serviços e Preços</h1>
     </div>
     <table>
         <tr>
@@ -245,6 +283,20 @@
             <td class="btnAgenda">Agendar este serviço</td>
         </tr>
     </table>
+
+</div>
+<!--_________________________________________________________________________________-->
+<div class="agendamento">
+
+    <div class="areaForm">
+        <h2>Agendamento</h2>
+        <form>
+            <p>Nome Completo!</p>
+            <input type="text" name="usuario" placeholder="Insira aqui">
+            <input class="btnSubmit" type="submit" value="Proximo ->">
+        </form>
+    </div>
+    
 
 </div>
 </body>
